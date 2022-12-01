@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #232851; /* intenté poner esta etiqueta en el body, mas no tuvo efecto*/
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    font-size: 16px;
+}
+
+header .top-nav-bar {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .nav-bar li a{
+    padding: 1rem;
+}
+
+.menu { /* estas propiedades son las que coloca por defecto el navegador */
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+
+.menu img { /* para darle la altura y ancho a la imagen de hamburgersa */
+    width: 46.88px;
+    height: auto;
+}
+
+header .nav-bar{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .contact a p{
+    padding: .5rem 1.5rem;
+    background-color: #8B48BF;
+    border-radius: 20px;
+    color:#F5F5F5;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* De aquí en adelante comienza el main y las secciones */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2.5rem auto;
+    flex-wrap: wrap;
+}
+
+.hero .content-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.hero .content-contact h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    width: 450px;
+    text-align: right;
+}
+
+.hero .content-contact p {
+    width: 450px;
+    text-align: right;
+    margin: 1rem;
+    margin: 1rem 0px;
+}
+
+.hero .content-contact a p{
+    padding: .5rem 1.5rem;
+    background-color: #8B48BF;
+    border-radius: 20px;
+    color:#F5F5F5;
+    width: auto;
+}
+
+/* empieza la siguente sección */
+
+.difference-in-pros .color-bar {
+    background-color: #8B48BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.difference-in-pros .color-bar .heading h2, .parrafo p{
+    color: #F5F5F5;
+    margin: 2rem 3.5rem;
+    width: 450px;
+}
+
+.heading h2 {
+    font-size: 2rem;
+}
+
+.group-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FAFAFA;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.groups {
+    display: flex;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.group-content .numbers span{
+    background-color: #8B48BF;
+    border-radius: 20px;
+    color:#F5F5F5;
+    padding: .5rem 1rem;
+    width: auto;
+}
+
+.group-content .text {
+    width: auto;
+    text-align: left;
+}
+
+.group-content .groups .text{
+    margin: 0 2rem;
+}
+
+.group-content .groups .text h3 {
+    padding: 0 0 1rem;
+}
+
+/* empieza siguiente sección */
+.best-of-the-month h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4.5rem;
+}
+
+.best-of-the-month .cards-container {
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+    margin: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.best-of-the-month .cards-container .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    margin: 1rem 0 1rem 0;
+    padding: 5px;
+}
+
+.best-of-the-month .cards-container .cards p{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.more-button a p{
+    background-color: #8B48BF;
+    border-radius: 20px;
+    color:#F5F5F5;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    width: 6rem;
+}
+
+.more-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* last section */
+.get-to-know-the-best-teams {
+    background-color: #8B48BF;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.get-to-know-the-best-teams h2 p {
+    color: #F5F5F5;
+}
+
+.get-to-know-the-best-teams h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 450px;
+    text-align: left ;
+    color: #F5F5F5;
+}
+
+.get-to-know-the-best-teams p {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* footer! empezando por la primera caja */
+.main-box {
+    background-color: #1E1E26;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+  /*   flex-wrap: wrap; */
+}
+
+.main-box .logo-and-socials-box{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem
+}
+
+.main-box .logo-and-socials-box .socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.main-box .logo-and-socials-box .logo {
+    margin-bottom: 3.5rem;
+}
+
+/* segunda caja con listas */
+
+.main-lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-box a {
+    color: #F5F5F5;
+}
+
+.main-box li {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+/* formulario */
+
+.formulario input {
+    padding: .5rem 1.5rem;
+    width: 10rem;
+    border-radius: 50px;
+}
+
+.formulario label {
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    background-color: #8B48BF;
+    margin-left: .5rem;
+    color: #F5F5F5;
+}
+
+.copyrights {
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+    nav, .contact {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero-picture img {
+        width: 100%;
+    }
+
+    .group-content .groups {
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .get-to-know-the-best-teams h2 {
+        width: auto;
+    }
+
+    .get-to-know-the-best-teams a {
+        padding-bottom: 2.5rem;
+    }
+
+    .best-of-the-month .cards-container .cards p{
+        width: 100%;
+        margin: 0px;
+        padding: 2rem;
+    }
+
+    .best-of-the-month .cards-container .cards p{
+        width: 0%;
+    }
+    .main-box {
+        flex-direction: column-reverse;
+    }
+
+    .main-lists {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-box .logo-and-socials-box {
+        flex-direction: column-reverse;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyrights {
+        justify-content: center;
+    }
+
+    .hero .content-contact{
+        padding-top: 3rem;
+    }
+    
+    .hero .content-contact p {
+        margin: 1rem 0;
+    }
+
+    .difference-in-pros .color-bar{
+        background-color: #3CDDF3;
+    }
+    .difference-in-pros .color-bar .heading h2, .parrafo p {
+        width: auto;
+}
+
+}
