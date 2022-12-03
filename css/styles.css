@@ -15,7 +15,6 @@ body {
 }
 
 header .top-nav-bar {
-    background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,13 +120,14 @@ header .contact a p{
     flex-wrap: wrap;
     background-color: #FAFAFA;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 2rem;
 }
 
 .groups {
     display: flex;
     align-items: flex-start;
     width: 45%;
+    padding: 1rem;
 }
 
 .group-content .numbers span{
@@ -151,33 +151,44 @@ header .contact a p{
     padding: 0 0 1rem;
 }
 
-/* empieza siguiente sección */
+/* Siguiente sección con tenistas */
+
 .best-of-the-month h2 {
     font-size: 2rem;
+    margin: 6rem;
+    margin-bottom: 6rem;
     text-align: center;
-    margin: 4.5rem;
 }
 
 .best-of-the-month .cards-container {
     display: flex;
     justify-content: center;
-    background-color: #FAFAFA;
-    margin: 2.5rem;
-    flex-wrap: wrap;
+    margin: 2rem;
 }
 
-.best-of-the-month .cards-container .cards {
+.cards-container .cards {
+    width: 445px;
+    height: 200px;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.3%;
     margin: 1rem 0 1rem 0;
-    padding: 5px;
 }
 
-.best-of-the-month .cards-container .cards p{
+.cards-container .cards img {
+    position: absolute;
+    margin-top: -2.4rem;
+}
+
+.cards-container .cards h3 {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.cards-container .cards p {
+    width: 420px;
     text-align: center;
-    margin-top: 1.5rem;
 }
 
 .more-button a p{
@@ -192,6 +203,7 @@ header .contact a p{
 .more-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 /* last section */
@@ -199,7 +211,7 @@ header .contact a p{
     background-color: #8B48BF;
     display: flex;
     justify-content: space-around;
-    margin-top: 10rem;
+    padding: 3.5rem;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -246,6 +258,7 @@ header .contact a p{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    gap: 1rem;
 }
 
 .main-box .logo-and-socials-box .logo {
@@ -257,6 +270,7 @@ header .contact a p{
 .main-lists {
     display: flex;
     justify-content: space-around;
+    gap: 10rem;
 }
 
 .main-box a {
@@ -303,52 +317,6 @@ header .contact a p{
         width: 100%;
     }
 
-    .group-content .groups {
-        width: 100%;
-        margin: 0;
-        padding: 2rem;
-    }
-
-    .get-to-know-the-best-teams h2 {
-        width: auto;
-    }
-
-    .get-to-know-the-best-teams a {
-        padding-bottom: 2.5rem;
-    }
-
-    .best-of-the-month .cards-container .cards p{
-        width: 100%;
-        margin: 0px;
-        padding: 2rem;
-    }
-
-    .best-of-the-month .cards-container .cards p{
-        width: 0%;
-    }
-    .main-box {
-        flex-direction: column-reverse;
-    }
-
-    .main-lists {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .main-box .logo-and-socials-box {
-        flex-direction: column-reverse;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .copyrights {
-        justify-content: center;
-    }
-
     .hero .content-contact{
         padding-top: 3rem;
     }
@@ -360,8 +328,74 @@ header .contact a p{
     .difference-in-pros .color-bar{
         background-color: #3CDDF3;
     }
+    
     .difference-in-pros .color-bar .heading h2, .parrafo p {
         width: auto;
-}
+    }
 
+    .group-content .groups {
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .get-to-know-the-best-teams {
+        background-color: #3CDDF3;
+    }
+
+    .get-to-know-the-best-teams h2 {
+        width: auto;
+    }
+
+    .get-to-know-the-best-teams a {
+        padding-bottom: 2.5rem;
+    }
+
+    .get-to-know-the-best-teams a p {
+        background-color: #232C50;
+        color: #FFFFFF;
+    }
+
+    .best-of-the-month .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hide-cards {
+        display: none;
+    }
+
+    .more-button {
+        margin-bottom: 3rem;
+    }
+    
+    .main-box {
+        flex-direction: column-reverse;
+    }
+
+    .main-lists {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .main-box .logo-and-socials-box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .main-box .logo-and-socials-box .socials ul{
+        gap: 2.5rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyrights {
+        justify-content: center;
+    }
 }
